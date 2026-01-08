@@ -1,4 +1,4 @@
-import products from './products.js';
+// Products are loaded globally from products.js
 
 // State management
 let cart = JSON.parse(localStorage.getItem('cart')) || [];

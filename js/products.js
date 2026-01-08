@@ -32,5 +32,5 @@ const products = [
         category: "Lifestyle"
     }
 ];
-
-export default products;
+// Global access for non-module script
+window.products = products;
