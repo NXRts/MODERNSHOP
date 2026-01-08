@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | ModernShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">MODERNSHOP</a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="products.html">Produk</a>
+                <a href="cart.html">Keranjang</a>
+            </div>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="checkout-grid">
+            <section>
+                <h1 style="margin-bottom: 2rem;">Detail Pengiriman</h1>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" required placeholder="Masukkan nama lengkap">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="nama@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Alamat Lengkap</label>
+                        <textarea id="address" rows="3" required placeholder="Jl. Contoh No. 123, Jakarta Selatan"></textarea>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label for="city">Kota</label>
+                            <input type="text" id="city" required placeholder="Jakarta">
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">Kode Pos</label>
+                            <input type="text" id="zip" required placeholder="12345">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment">Metode Pembayaran</label>
+                        <select id="payment" required>
+                            <option value="">Pilih Pembayaran</option>
+                            <option value="transfer">Transfer Bank (BCA/Mandiri)</option>
+                            <option value="e-wallet">E-Wallet (GoPay/OVO)</option>
+                            <option value="cod">Bayar di Tempat (COD)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Konfirmasi Pesanan</button>
+                </form>
+            </section>
+
+            <aside>
+                <div class="cart-summary" style="max-width: none;">
+                    <h3 style="margin-bottom: 1.5rem;">Ringkasan Pesanan</h3>
+                    <div class="checkout-summary-items">
+                        <!-- Summary items injected by main.js -->
+                    </div>
+                    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--glass-border);">
+                        <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 1.25rem;">
+                            <span>Total</span>
+                            <span id="checkout-total">Rp 0</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

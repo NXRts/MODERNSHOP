@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ModernShop | Premium Tech & Lifestyle</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="index.html" class="logo">MODERNSHOP</a>
+        <div class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="products.html">Produk</a>
+          <a href="#">Tentang Kami</a>
+          <a href="#">Kontak</a>
+        </div>
+        <div class="cart-icon">
+          <a href="cart.html">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+            <span class="cart-badge">0</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <h1>Upgrade Gaya Hidup Digital Anda.</h1>
+        <p>
+          Temukan koleksi eksklusif produk teknologi dan gaya hidup dengan
+          desain modern dan kualitas premium.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center">
+          <a href="products.html" class="btn btn-primary">Belanja Sekarang</a>
+          <a href="#featured" class="btn btn-outline">Lihat Koleksi</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="featured" class="container" style="padding: 5rem 0">
+      <div class="section-title">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1rem">Produk Unggulan</h2>
+        <p style="color: var(--text-muted)">
+          Pilihan terbaik untuk melengkapi hari-hari Anda.
+        </p>
+      </div>
+      <div class="product-grid" data-featured="true">
+        <!-- Products will be injected by main.js -->
+      </div>
+      <div style="text-align: center; margin-top: 3rem">
+        <a href="products.html" class="btn btn-outline">Lihat Semua Produk</a>
+      </div>
+    </section>
+
+    <footer
+      style="
+        background: var(--bg-card);
+        padding: 4rem 0;
+        margin-top: 5rem;
+        border-top: 1px solid var(--glass-border);
+      "
+    >
+      <div
+        class="container"
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 3rem;
+        "
+      >
+        <div>
+          <a href="#" class="logo" style="margin-bottom: 1.5rem; display: block"
+            >MODERNSHOP</a
+          >
+          <p style="color: var(--text-muted); font-size: 0.9rem">
+            Toko online terpercaya untuk kebutuhan teknologi dan gaya hidup
+            modern Anda.
+          </p>
+        </div>
+        <div>
+          <h4 style="margin-bottom: 1.5rem">Tautan Cepat</h4>
+          <ul
+            style="
+              list-style: none;
+              color: var(--text-muted);
+              font-size: 0.9rem;
+            "
+          >
+            <li style="margin-bottom: 0.5rem">
+              <a href="index.html">Beranda</a>
+            </li>
+            <li style="margin-bottom: 0.5rem">
+              <a href="products.html">Semua Produk</a>
+            </li>
+            <li style="margin-bottom: 0.5rem">
+              <a href="#">Kebijakan Privasi</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="margin-bottom: 1.5rem">Ikuti Kami</h4>
+          <div style="display: flex; gap: 1rem">
+            <a href="#" style="color: var(--text-muted)">Instagram</a>
+            <a href="#" style="color: var(--text-muted)">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container"
+        style="
+          margin-top: 4rem;
+          padding-top: 2rem;
+          border-top: 1px solid var(--glass-border);
+          text-align: center;
+          color: var(--text-muted);
+          font-size: 0.8rem;
+        "
+      >
+        © 2026 ModernShop. All rights reserved.
+      </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
