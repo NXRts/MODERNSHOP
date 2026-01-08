@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semua Produk | ModernShop</title>
+    <title>Tentang Kami | ModernShop</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,14 +25,25 @@
         </div>
     </nav>
 
-    <main class="container" style="padding-top: 8rem;">
+    <main class="container" style="padding: 10rem 0 5rem;">
         <div class="section-title">
-            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Katalog Produk</h1>
-            <p style="color: var(--text-muted);">Temukan produk yang sesuai dengan kebutuhan Anda.</p>
+            <h1 style="font-size: 3rem; margin-bottom: 2rem;">Tentang ModernShop</h1>
         </div>
-
-        <div class="product-grid" data-featured="false">
-            <!-- Products will be injected by main.js -->
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+            <div style="background: var(--bg-card); padding: 3rem; border-radius: 20px; border: 1px solid var(--glass-border);">
+                <h2 style="color: var(--primary); margin-bottom: 1.5rem;">Visi Kami</h2>
+                <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;">
+                    ModernShop berdedikasi untuk menghadirkan produk teknologi dan gaya hidup yang paling mutakhir langsung ke tangan Anda. Kami percaya bahwa teknologi harus mempercantik kehidupan, bukan merumitkannya.
+                </p>
+                <h2 style="color: var(--secondary); margin-bottom: 1.5rem;">Kualitas Premium</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem;">
+                    Setiap produk dalam katalog kami telah melalui kurasi ketat untuk memastikan standar kualitas, desain, dan fungsionalitas yang tinggi.
+                </p>
+            </div>
+            <div>
+                <img src="assets/images/headphones.png" alt="Tentang Kami" style="width: 100%; border-radius: 20px; filter: grayscale(0.5) contrast(1.2);">
+            </div>
         </div>
     </main>
 
