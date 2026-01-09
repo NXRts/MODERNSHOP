@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semua Produk | ModernShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">MODERNSHOP</a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="products.html">Produk</a>
+                <a href="about.html">Tentang Kami</a>
+                <a href="contact.html">Kontak</a>
+            </div>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 8rem;">
+        <div class="section-title">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Katalog Produk</h1>
+            <p style="color: var(--text-muted);">Temukan produk yang sesuai dengan kebutuhan Anda.</p>
+        </div>
+
+        <div class="product-grid" data-featured="false">
+            <!-- Products will be injected by main.js -->
+        </div>
+    </main>
+
+    <footer style="background: var(--bg-card); padding: 4rem 0; margin-top: 5rem; border-top: 1px solid var(--glass-border);">
+        <div class="container" style="text-align: center; color: var(--text-muted); font-size: 0.8rem;">
+            © 2026 ModernShop. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
